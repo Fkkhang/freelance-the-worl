@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Freelancing Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #333;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .cta-button:hover {
+            background-color: #258cd1;
+        }
+
+        .form-container {
+            background-color: #f5f5f5;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .modal-content {
+            background-color: #fff;
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Freelancing Platform</h1>
+        <p>Find the best freelancers for your projects.</p>
+        <a href="#" class="cta-button">Get Started</a>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="#services" id="services-link">Services</a>
+    </nav>
+
+    <div class="container">
+        <h2>About Us</h2>
+        <p>
+            Our platform connects businesses and individuals with talented freelancers from around the world. Whether you need a writer, developer, designer, or any other skilled professional, you can find the perfect match here.
+        </p>
+
+        <h2>How It Works</h2>
+        <p>
+            1. Post your project or job.
+            <br>2. Review proposals from freelancers.
+            <br>3. Select the best fit for your project.
+            <br>4. Collaborate and get the work done.
+        </p>
+
+        <h2>About the Boss - M. FARAZ KHAN</h2>
+        <p>
+            M. FARAZ KHAN is the founder and visionary leader of our freelancing platform. With a passion for connecting talent and opportunity, he has created a platform that empowers both freelancers and clients to achieve their goals.
+        </p>
+
+        <h2 id="contact">Contact Us</h2>
+        <div class="form-container">
+            <h3>Send us a message:</h3>
+            <form action="mailto:fk235706676@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="text" name="email" placeholder="Your Email">
+                <textarea name="message" placeholder="Your Message"></textarea>
+                <button type="submit" class="cta-button">Submit</button>
+            </form>
+            <p>Phone Number: 03235706676</p>
+            <p>Email: fk235706676@gmail.com</p>
+        </div>
+    </div>
+
+    <div class="modal" id="services-modal">
+        <div class="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+            <h2>Services</h2>
+            <ul>
+                <li>Graphic Designing</li>
+                <li>Data Entry Work</li>
+                <li>Digital Information Technology (D.I.T)</li>
+                <li>Trading</li>
+                <li>YouTube Automation</li>
+                <li>Shirt Designing</li>
+                <li>Logo Designing</li>
+                <li>Business Card Making</li>
+                <li>Designing</li>
+                <li>Adobe Illustrator Work</li>
+                <li>Adobe Photoshop Work</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("services-link").addEventListener("click", function() {
+            document.getElementById("services-modal").style.display = "block";
+        });
+
+        document.getElementById("close-modal").addEventListener("click", function() {
+            document.getElementById("services-modal").style.display = "none";
+        });
+    </script>
+</body>
+</html>
